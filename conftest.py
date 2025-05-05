@@ -10,4 +10,4 @@ def driver():
     browser.maximize_window()
     browser.implicitly_wait(5)
     yield browser
-    browser.close()
+    browser.quit()
