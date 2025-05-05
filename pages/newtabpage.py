@@ -21,7 +21,6 @@ class NewTabPage:
     def find_element_by_tag_name(self, tag_name):
         return self.driver.find_element(By.TAG_NAME, tag_name)
 
-
     def switch_to_new_tab(self, original_window):
         windows = self.driver.window_handles
         assert len(windows) == 2
