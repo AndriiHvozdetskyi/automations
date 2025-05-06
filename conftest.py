@@ -2,12 +2,13 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-@pytest.fixture()
+
+@pytest.fixture(scope="function")
 def driver():
     options = Options()
-    options.add_argument('--headless')
-    browser = webdriver.Chrome(options=options)
-    browser.maximize_window()
-    browser.implicitly_wait(5)
-    yield browser
-    browser.quit()
+    options.add_argument("--headless")
+    options.add_argument("--start-maximized")
+    driver = webdriver.Chrome(options=options)
+    driver.implicitly_wait(5)
+    yield driver
+    driver.close()
