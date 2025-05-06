@@ -30,7 +30,7 @@ def test_open_email_field(driver):
     inputpage.click_by_xpath('''//a[text()="Email field"]''')
     inputpage.check_url_is("https://www.qa-practice.com/elements/input/email")
 
-# тест введення пошти у поле
+# Тест введення пошти у поле
 def test_input_email(driver):
     inputpage = InputPage(driver)
     inputpage.open("https://www.qa-practice.com/elements/input/email")
@@ -44,7 +44,7 @@ def test_validation_email(driver):
     inputpage.input_text_by_id("id_email", "dsa@dd")
     inputpage.check_text_by_id("error_1_id_email", "Enter a valid email address.")
 
-# тест відкриття сторінки з паролем
+# Тест відкриття сторінки з паролем
 def test_open_password_field(driver):
     inputpage = InputPage(driver)
     inputpage.open("https://www.qa-practice.com/elements/input/email")
@@ -86,7 +86,7 @@ def test_validation_digit_password(driver):
     inputpage.input_text_by_id("id_password", "Aaaaaaaaa!")
     inputpage.check_text_by_id("error_1_id_password", "Low password complexity")
 
-# Тест валідації на відсутність спец символів у паролі
+# Тест валідації на відсутність пец символів у паролі
 def test_validation_special_characters_password(driver):
     inputpage = InputPage(driver)
     inputpage.open("https://www.qa-practice.com/elements/input/passwd")
