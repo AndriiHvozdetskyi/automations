@@ -1,10 +1,8 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
 
+class CheckBox:
 
-class ButtunsPage:
-
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
 
     def open(self, url):
@@ -16,11 +14,8 @@ class ButtunsPage:
     def click_by_xpath(self, xpath):
         self.driver.find_element(By.XPATH, xpath).click()
 
-    def check_text(self, id, text):
+    def check_text_is(self, id, text):
         assert self.driver.find_element(By.ID, id).text == text
 
     def check_url_is(self, url):
         assert self.driver.current_url == url
-
-    def select(self, id, value):
-        Select(self.driver.find_element(By.ID, id)).select_by_value(value)
