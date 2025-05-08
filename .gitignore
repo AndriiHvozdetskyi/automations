@@ -9,3 +9,5 @@ __pycache__
 .pytest_cache
 .pytest_cache/
 .gitignore
+downloaded_files
+downloaded_files/

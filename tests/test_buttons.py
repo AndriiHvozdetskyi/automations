@@ -1,4 +1,4 @@
-from pages.buttonspage import ButtunsPage
+from pages.buttons_page import ButtunsPage
 
 #Тест натиску на кнопку
 def test_click_button_simple(driver):

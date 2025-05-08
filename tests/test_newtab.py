@@ -1,5 +1,5 @@
 from conftest import driver
-from pages.newtabpage import NewTabPage
+from pages.newtab_page import NewTabPage
 
 # Тест відкриття цієї сторінки
 def test_open_site(driver):

@@ -7,10 +7,7 @@ from selenium.webdriver.chrome.options import Options
 def driver():
     options = Options()
     options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--disable-software-rasterizer')
-    # options.add_argument('--start-maximized')
+    options.add_argument('--start-maximized')
     driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(5)
     yield driver

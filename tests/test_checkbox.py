@@ -1,4 +1,4 @@
-from pages.checkboxpages import CheckBox
+from pages.checkbox_pages import CheckBox
 
 #Тест активації 1 чекбоксу та перегляд результату
 def test_click_with_active_checkbox(driver):

@@ -1,5 +1,5 @@
 from conftest import *
-from pages.inputpage import InputPage
+from pages.input_page import InputPage
 
 
 # Тест введення даних у поле інпуту

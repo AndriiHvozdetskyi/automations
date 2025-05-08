@@ -1,6 +1,6 @@
 import pytest
 from itertools import product
-from pages.selectpage import SelectPage
+from pages.select_page import SelectPage
 
 # Тест одного селекту
 @pytest.mark.parametrize("language_value", ['Python', 'JavaScript', 'Ruby', 'C#', 'Java'])
